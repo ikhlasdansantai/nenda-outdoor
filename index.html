@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nenda Website</title>
+    <link rel="stylesheet" href="public/css/output.css" />
+    <link rel="stylesheet" href="./src/css/baseStyle.css" />
+  </head>
+  <body>
+    <div class="container-all">
+      <header class="bg-primary font-Schibsted">
+        <nav class="fixed bg-primary top-0 left-0 right-0 z-50">
+          <div class="max-w-screen-xl ml-auto flex flex-wrap items-center justify-end p-4">
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+              <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <li>
+                  <a href="#" class="block text-gray-50 rounded" aria-current="page">HOME</a>
+                </li>
+                <li>
+                  <a href="./public/pages/location.html" class="block text-gray-900 rounded hover:text-gray-300">LOCATION</a>
+                </li>
+                <li>
+                  <a href="./public/pages/sewa.html" class="block text-gray-900 rounded hover:text-gray-300">SEWA</a>
+                </li>
+                <li>
+                  <a href="./public/pages/belanja.html" class="block text-gray-900 rounded hover:text-gray-300">BELANJA</a>
+                </li>
+                <li>
+                  <a href="./public/pages/kontak.html" class="block text-gray-900 rounded hover:text-gray-300">KONTAK</a>
+                </li>
+                <li>
+                  <a href="./public/pages/bantuan.html" class="block text-gray-900 rounded hover:text-gray-300">BANTUAN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <figure class="relative mt-10 min-[840px]:mt-0">
+          <img src="./public/assets/Images/Background Halaman/Header.jpg" alt="Header BG" class="block max-w-full" />
+          <figcaption class="flex justify-center items-center text-center text-white text-7xl min-[890px]:text-9xl font-Indieground absolute top-0 left-0 w-full h-full">Beranda</figcaption>
+        </figure>
+      </header>
+      <main class="bg-secondary font-Schibsted py-10 min-[840px]:py-28 px-[1.5rem]">
+        <div class="flex flex-col min-[840px]:flex-row justify-between items-center">
+          <p class="left text-base min-[840px]w-[55%] min-[840px]text-2xl text-white leading-10">
+            Nenda Outdoor didirikan pada tahun 2020 oleh Akbar Ramadhan Belantara. Untuk kalian yang ingin menyewa atau membeli produk dari Nenda Outdoor bisa melalui media sosial atau datang langsung ke tempatnya yang berlokasikan di Jl.
+            Adipati Kertamanah No. 53 Baleendah, Bandung.
+          </p>
+          <div class="buttons mt-10 w-full flex flex-col gap-10 text-white justify-end">
+            <button class="buttons border-4 py-6 px-16 text-4xl min-[840px]px-24 min-[840px]text-5xl"><a href="./public/pages/sewa.html">Sewa</a></button>
+            <button class="buttons border-4 py-6 px-16 text-4xl min-[840px]px-24 min-[840px]text-5xl"><a href="./public/pages/belanja.html">Belanja</a></button>
+          </div>
+        </div>
+      </main>
+      <footer class="text-center bg-third p-standart">
+        <p class="text-center text-white">COPYRIGHT © 2023 | NENDA OUTDOOR</p>
+      </footer>
+    </div>
+    <script src="/src/js/script.js"></script>
+  </body>
+</html>

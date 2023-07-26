@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belanja</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../../src/css/baseStyle.css" />
+  </head>
+  <body>
+    <header class="bg-primary font-Schibsted">
+      <nav class="fixed bg-primary top-0 left-0 right-0 z-50">
+        <div class="max-w-screen-xl ml-auto flex flex-wrap items-center justify-end p-4">
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+              <li>
+                <a href="../../index.html" class="block text-gray-900 hover:text-gray-300" aria-current="page">HOME</a>
+              </li>
+              <li>
+                <a href="./location.html" class="block text-gray-900 rounded hover:text-gray-300">LOCATION</a>
+              </li>
+              <li>
+                <a href="./sewa.html" class="block text-gray-900 hover:text-gray-300">SEWA</a>
+              </li>
+              <li>
+                <a href="#" class="block text-gray-50">BELANJA</a>
+              </li>
+              <li>
+                <a href="./kontak.html" class="block text-gray-900 rounded hover:text-gray-300">KONTAK</a>
+              </li>
+              <li>
+                <a href="./bantuan.html" class="block text-gray-900 rounded hover:text-gray-300">BANTUAN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <figure class="relative overflow-hidden mt-10 min-[840px]:mt-0">
+        <img src="../assets/Images/Background Halaman/Header.jpg" alt="Header BG" class="block max-w-full" />
+        <figcaption class="flex justify-center items-center text-center text-white text-7xl min-[890px]:text-9xl font-Indieground absolute top-0 left-0 w-full h-full">Belanja</figcaption>
+      </figure>
+    </header>
+    <main class="bg-secondary p-standart font-Schibsted">
+      <div class="cards py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+        <div class="card cursor-pointer" id="card-1">
+          <figure class="bg-white">
+            <img src="../assets/Images/BELANJA/Jaket Gunung.png" alt="belanjaItemIMG" />
+          </figure>
+          <h2 class="bg-white p-standart mt-10 text-center">Jaket</h2>
+        </div>
+        <div class="card cursor-pointer" id="card-2">
+          <figure class="bg-white">
+            <img src="../assets/Images/BELANJA/Celana gunung.png" alt="belanjaItemIMG" />
+          </figure>
+          <h2 class="bg-white p-standart mt-10 text-center">Celana Gunung</h2>
+        </div>
+        <div class="card cursor-pointer" id="card-3">
+          <figure class="bg-white">
+            <img src="../assets/Images/BELANJA/Gas.JPG" alt="belanjaItemIMG" />
+          </figure>
+          <h2 class="bg-white p-standart mt-10 text-center">Gas Portabel</h2>
+        </div>
+      </div>
+      <div id="detail-container" class="hidden">
+        <!-- Konten detail -->
+        <div class="flex items-center flex-col min-[840px]:flex-row gap-20" id="detail-wrapper ">
+          <div class="images w-[40%]">
+            <figure>
+              <img src="" alt="item IMG" class="block max-w-full" />
+            </figure>
+          </div>
+          <div class="details min-[840px]:w-[50%] text-white">
+            <h2 class="text-4xl text-center mb-10"></h2>
+            <p class="text-lg"></p>
+            <button id="show-cards" class="border-2 py-2 px-4 border-white mt-4">Kembali</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center bg-third p-standart">
+      <p class="text-center text-white">COPYRIGHT © 2023 | NENDA OUTDOOR</p>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/marked@3.0.3/marked.min.js"></script>
+  <script>
+    const cardContent = [
+      {
+        id: "card-1",
+        image: "../assets/Images/BELANJA/Jaket Gunung.png",
+        title: "Jaket",
+        desc: `jaket ini mampu melindungi diri penggunanya dari air karena menggunakan material kain taslan pada bagian luar jaket. Pada bagian dalam, jaket anti air ini menggunakan material polar yang mampu menjaga kehangatan ketika suhu udara luar menurun.`,
+      },
+      {
+        id: "card-2",
+        image: "../assets/Images/BELANJA/Celana gunung.png",
+        title: "Celana Gunung",
+        desc: `Celana Softshell
+    Terbuat dari bahan campuran antara nilon dan sintetis polyester. Lebih bersifat windproof dan water resistant. Lapisan bagian dalamnya biasa dilapisi dengan kain fleece yang berfungsi menambah insulasi.
+`,
+      },
+      {
+        id: "card-3",
+        image: "../assets/Images/BELANJA/Gas.JPG",
+        title: "Gas Portabel",
+        desc: `Tenda dome merupakan tempat tinggal selama berkegiatan di alam bebas, misalnya ketika sedang camping atau naik gunung. Karena itu, kenyamanan dalam menggunakannya sangat perlu diperhatikan. Kelebihan:
+
+* Frame nya terbuat dari bahan aluminium
+* Bobotnya ringan dan mudah dibawa
+* Memiliki dua pintu untuk memudahkan akses
+masuk dan keluar tenda.`,
+      },
+    ];
+
+    const detailContainer = document.getElementById("detail-container");
+    const cards = document.querySelectorAll(".card");
+    const cardsContainer = document.querySelector(".cards");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const cardId = card.id;
+        cardsContainer.classList.add("hidden");
+
+        const selectedCardContent = cardContent.find((content) => content.id === cardId);
+        if (selectedCardContent) {
+          displayDetail(selectedCardContent);
+          detailContainer.classList.remove("hidden");
+        }
+      });
+      document.getElementById("show-cards").addEventListener("click", () => {
+        cardsContainer.classList.remove("hidden");
+        detailContainer.classList.add("hidden");
+      });
+    });
+
+    // Fungsi untuk menampilkan konten detail sesuai dengan card yang diklik
+    function displayDetail(content) {
+      // Ambil elemen-elemen yang akan diisi dengan konten dari objek content
+      const detailImages = detailContainer.querySelector(".images figure");
+      const detailTitle = detailContainer.querySelector(".details h2");
+      const detailDescription = detailContainer.querySelector(".details p");
+
+      // Hapus konten sebelumnya jika ada
+      detailImages.innerHTML = "";
+
+      const figure = document.createElement("figure");
+      const img = document.createElement("img");
+      img.src = content.image;
+      figure.appendChild(img);
+      detailImages.appendChild(figure);
+
+      detailTitle.textContent = content.title;
+      detailDescription.textContent = content.desc;
+
+      const descriptionHTML = marked(content.desc, { sanitize: true });
+      detailDescription.innerHTML = descriptionHTML;
+    }
+  </script>
+</html>
