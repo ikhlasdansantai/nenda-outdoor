@@ -6,3 +6,5 @@ button.addEventListener("click", () => {
   button.setAttribute("aria-expanded", !expanded);
   navbar.classList.toggle("hidden");
 });
+
+console.log("Script Run");
