@@ -7,4 +7,3 @@ button.addEventListener("click", () => {
   navbar.classList.toggle("hidden");
 });
 
-console.log("Script Run");

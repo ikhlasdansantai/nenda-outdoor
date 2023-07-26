@@ -6,7 +6,6 @@
     <title>Nenda Website</title>
     <link rel="stylesheet" href="public/css/output.css" />
     <link rel="stylesheet" href="./src/css/baseStyle.css" />
-    <script src="./src/js/script.js" type="text/JavaScript"></script>
   </head>
   <body>
     <div class="container-all">
@@ -71,4 +70,15 @@
       </footer>
     </div>
   </body>
+  <!-- <script src="./src/js/script.js" type="text/JavaScript"></script> -->
+  <script>
+    const button = document.querySelector('[data-collapse-toggle="navbar-default"]');
+    const navbar = document.getElementById("navbar-default");
+
+    button.addEventListener("click", () => {
+      const expanded = button.getAttribute("aria-expanded") === "true" || false;
+      button.setAttribute("aria-expanded", !expanded);
+      navbar.classList.toggle("hidden");
+    });
+  </script>
 </html>
