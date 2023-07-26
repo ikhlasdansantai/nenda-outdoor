@@ -2,7 +2,7 @@
   "name": "nenda-outdoor",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --watch",
     "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css"
