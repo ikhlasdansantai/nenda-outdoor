@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="./src/css/baseStyle.css" />
   </head>
   <body>
+    <style>
+      @media (min-width: 840px) {
+        #wrapper p {
+          /* border: 1px solid red; */
+          /* max-width: 100ch; */
+        }
+      }
+    </style>
     <div class="container-all">
       <header class="bg-primary font-Schibsted">
         <nav class="fixed bg-primary top-0 left-0 right-0 z-50">
@@ -54,8 +62,8 @@
         </figure>
       </header>
       <main class="bg-secondary font-Schibsted py-10 min-[840px]:py-28 px-[1.5rem]">
-        <div class="flex flex-col min-[840px]:flex-row justify-between items-center gap-40">
-          <p class="left text-base min-[840px]w-[42ch] min-[840px]text-2xl text-white leading-10">
+        <div id="wrapper" class="flex flex-col min-[840px]:flex-row justify-between items-center gap-40">
+          <p id="text-desc" class="left text-base min-[840px]:w-[100%] min-[840px]text-3xl text-white leading-10">
             Nenda Outdoor didirikan pada tahun 2020 oleh Akbar Ramadhan Belantara. Untuk kalian yang ingin menyewa atau membeli produk dari Nenda Outdoor bisa melalui media sosial atau datang langsung ke tempatnya yang berlokasikan di Jl.
             Adipati Kertamanah No. 53 Baleendah, Bandung.
           </p>
