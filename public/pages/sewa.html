@@ -10,7 +10,7 @@
   <body>
     <header class="bg-primary font-Schibsted">
       <nav class="fixed bg-primary top-0 left-0 right-0 z-50">
-        <div class="max-w-screen-xl ml-auto flex flex-wrap items-center justify-end p-4">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
           <h2 class="text-white text-4xl tracking-wide font-Indieground">Nenda Outdoor</h2>
           <button
             data-collapse-toggle="navbar-default"
@@ -48,7 +48,7 @@
           </div>
         </div>
       </nav>
-      <figure class="relative overflow-hidden mt-10 min-[840px]:mt-0">
+      <figure id="bg-header" class="relative overflow-hidden mt-10 min-[840px]:mt-0">
         <img src="../assets/Images/Background Halaman/Header.jpg" alt="Header BG" class="block max-w-full" />
         <figcaption class="flex justify-center items-center text-center text-white text-7xl min-[890px]:text-9xl font-Indieground absolute top-0 left-0 w-full h-full">Sewa</figcaption>
       </figure>
@@ -105,11 +105,11 @@
         </div>
       </div>
 
-      <div id="detail-container" class="hidden">
+      <div id="detail-container" class="hidden py-40">
         <!-- Konten detail -->
         <div class="flex items-center flex-col gap-10 min-[840px]:flex-row min-[890px]:gap-20" id="detail-wrapper ">
           <div class="images min-[890px]:w-[40%]">
-            <figure>
+            <figure class="border-8 border-white">
               <img src="" alt="sewaItemIMGitem IMG" class="block max-w-full" />
             </figure>
           </div>
@@ -197,6 +197,7 @@ Dengan kapasitas yang besar, carrier bisa digunakan untuk membawa banyak barang.
       navbar.classList.toggle("hidden");
     });
 
+    const header = document.getElementById("bg-header");
     const detailContainer = document.getElementById("detail-container");
     const cards = document.querySelectorAll(".card");
     const cardsContainer = document.querySelector(".cards");
@@ -205,6 +206,7 @@ Dengan kapasitas yang besar, carrier bisa digunakan untuk membawa banyak barang.
       card.addEventListener("click", () => {
         const cardId = card.id;
         cardsContainer.classList.add("hidden");
+        header.classList.add("hidden");
 
         const selectedCardContent = cardContent.find((content) => content.id === cardId);
         if (selectedCardContent) {
@@ -215,6 +217,7 @@ Dengan kapasitas yang besar, carrier bisa digunakan untuk membawa banyak barang.
       document.getElementById("show-cards").addEventListener("click", () => {
         cardsContainer.classList.remove("hidden");
         detailContainer.classList.add("hidden");
+        header.classList.remove("hidden");
       });
     });
 
