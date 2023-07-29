@@ -829,6 +829,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-Indieground {
   font-family: Indieground, sans-serif;
 }
@@ -840,6 +844,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -857,11 +866,6 @@ video {
   line-height: 1;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -870,11 +874,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-medium {
@@ -998,28 +997,12 @@ video {
     margin-top: 0px;
   }
 
-  .min-\[840px\]\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .min-\[840px\]\:w-1\/2 {
-    width: 50%;
-  }
-
-  .min-\[840px\]\:w-\[55\%\] {
-    width: 55%;
-  }
-
-  .min-\[840px\]\:w-\[75\%\] {
-    width: 75%;
-  }
-
-  .min-\[840px\]\:w-\[10\%\] {
-    width: 10%;
-  }
-
   .min-\[840px\]\:w-\[100\%\] {
     width: 100%;
+  }
+
+  .min-\[840px\]\:w-\[50\%\] {
+    width: 50%;
   }
 
   .min-\[840px\]\:flex-row {
