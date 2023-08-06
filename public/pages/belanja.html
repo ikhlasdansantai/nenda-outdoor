@@ -10,7 +10,7 @@
   <body>
     <header class="bg-primary font-Schibsted">
       <nav class="fixed bg-primary top-0 left-0 right-0 z-50">
-        <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4 md:px-20">
           <h2 class="text-white text-4xl tracking-wide font-Indieground">Nenda Outdoor</h2>
           <button
             data-collapse-toggle="navbar-default"
@@ -49,21 +49,21 @@
         </div>
       </nav>
       <figure id="bg-header" class="relative overflow-hidden mt-10 min-[840px]:mt-0">
-        <img src="../assets/Images/Background Halaman/Header.jpg" alt="Header BG" class="block max-w-full" />
+        <img src="../assets/Images/Background Halaman/belanja.jpg" alt="Header BG" class="block max-w-full" />
         <figcaption class="flex justify-center items-center text-center text-white text-7xl min-[890px]:text-9xl font-Indieground absolute top-0 left-0 w-full h-full">Belanja</figcaption>
       </figure>
     </header>
-    <main class="bg-secondary p-standart font-Schibsted">
-      <div class="cards py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+    <main class="bg-secondary font-Schibsted">
+      <div class="max-w-screen-xl mx-auto cards p-4 md:px-20 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
         <div class="card cursor-pointer" id="card-1">
           <figure class="bg-white">
-            <img src="../assets/Images/BELANJA/Jaket Gunung.png" alt="belanjaItemIMG" />
+            <img src="../assets/Images/BELANJA/JAKET.jpg" alt="belanjaItemIMG" />
           </figure>
           <h2 class="bg-white p-standart mt-10 text-center">Jaket</h2>
         </div>
         <div class="card cursor-pointer" id="card-2">
           <figure class="bg-white">
-            <img src="../assets/Images/BELANJA/Celana gunung.png" alt="belanjaItemIMG" />
+            <img src="../assets/Images/BELANJA/CELANA.jpg" alt="belanjaItemIMG" />
           </figure>
           <h2 class="bg-white p-standart mt-10 text-center">Celana Gunung</h2>
         </div>
@@ -74,7 +74,7 @@
           <h2 class="bg-white p-standart mt-10 text-center">Gas Portabel</h2>
         </div>
       </div>
-      <div id="detail-container" class="py-40 hidden">
+      <div id="detail-container" class="overflow-hidden hidden px-4 py-14 md:px-20 md:py-40">
         <!-- Konten detail -->
         <div class="flex items-center flex-col min-[840px]:flex-row gap-20" id="detail-wrapper ">
           <div class="images w-[40%]">
@@ -85,6 +85,7 @@
           <div class="details min-[840px]:w-[50%] text-white">
             <h2 class="text-4xl text-center mb-10"></h2>
             <p class="text-lg"></p>
+            <p class="price font-bold">Harga - Rp.<span></span> / 2pcs</p>
             <button id="show-cards" class="border-2 py-2 px-4 border-white mt-4">Kembali</button>
           </div>
         </div>
@@ -99,28 +100,32 @@
     const cardContent = [
       {
         id: "card-1",
-        image: "../assets/Images/BELANJA/Jaket Gunung.png",
+        image: "../assets/Images/BELANJA/JAKET.jpg",
         title: "Jaket",
         desc: `jaket ini mampu melindungi diri penggunanya dari air karena menggunakan material kain taslan pada bagian luar jaket. Pada bagian dalam, jaket anti air ini menggunakan material polar yang mampu menjaga kehangatan ketika suhu udara luar menurun.`,
+        price: 100000,
       },
       {
         id: "card-2",
-        image: "../assets/Images/BELANJA/Celana gunung.png",
+        image: "../assets/Images/BELANJA/CELANA.jpg",
         title: "Celana Gunung",
-        desc: `Celana Softshell
-    Terbuat dari bahan campuran antara nilon dan sintetis polyester. Lebih bersifat windproof dan water resistant. Lapisan bagian dalamnya biasa dilapisi dengan kain fleece yang berfungsi menambah insulasi.
-`,
+        desc: `Celana Softshell Terbuat dari bahan campuran antara nilon dan sintetis polyester. Lebih bersifat windproof dan water resistant. Lapisan bagian dalamnya biasa dilapisi dengan kain fleece yang berfungsi menambah insulasi.`,
+        price: 100000,
       },
       {
         id: "card-3",
         image: "../assets/Images/BELANJA/Gas.JPG",
         title: "Gas Portabel",
-        desc: `Tenda dome merupakan tempat tinggal selama berkegiatan di alam bebas, misalnya ketika sedang camping atau naik gunung. Karena itu, kenyamanan dalam menggunakannya sangat perlu diperhatikan. Kelebihan:
+        desc: `<p>Kompor portable adalah istilah yang digunakan untuk
+        menyebut kompor berukuran mini dan mudah dipindah-
+        pindahkan. Kompor seperti ini biasanya sangat ringan
+        dan menggunakan berbagai jenis bahan bakar.<p>
 
-* Frame nya terbuat dari bahan aluminium
-* Bobotnya ringan dan mudah dibawa
-* Memiliki dua pintu untuk memudahkan akses
-masuk dan keluar tenda.`,
+        <p>Biasanya kompor seperti ini sudah disertai tas koper kecil dan tempat menyimpan bahan bakar gas yang dikemas dalam tabung logam kecil.<p>
+
+        <p>Kompor portable dengan bahan bakar gas paling cocok untuk dibawa berkemah. Karena ringan dan praktis, Anda bisa
+        membawanya trekking. Tak perlu membuat api unggun lagi. Acara memasak di tengah alam jadi lebih praktis.</p>`,
+        price: 100000,
       },
     ];
 
@@ -164,6 +169,7 @@ masuk dan keluar tenda.`,
       const detailImages = detailContainer.querySelector(".images figure");
       const detailTitle = detailContainer.querySelector(".details h2");
       const detailDescription = detailContainer.querySelector(".details p");
+      const detailPrice = detailContainer.querySelector(".details p span");
 
       // Hapus konten sebelumnya jika ada
       detailImages.innerHTML = "";
@@ -175,10 +181,8 @@ masuk dan keluar tenda.`,
       detailImages.appendChild(figure);
 
       detailTitle.textContent = content.title;
-      detailDescription.textContent = content.desc;
-
-      const descriptionHTML = marked(content.desc, { sanitize: true });
-      detailDescription.innerHTML = descriptionHTML;
+      detailDescription.innerHTML = content.desc;
+      detailPrice.textContent = content.price.toLocaleString("id-ID");
     }
   </script>
 </html>
