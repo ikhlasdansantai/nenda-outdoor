@@ -10,7 +10,7 @@
   <body>
     <header class="bg-primary font-Schibsted">
       <nav class="fixed bg-primary top-0 left-0 right-0 z-50">
-        <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4 md:px-20">
           <h2 class="text-white text-4xl tracking-wide font-Indieground">Nenda Outdoor</h2>
           <button
             data-collapse-toggle="navbar-default"
@@ -49,74 +49,75 @@
         </div>
       </nav>
       <figure id="bg-header" class="relative overflow-hidden mt-10 min-[840px]:mt-0">
-        <img src="../assets/Images/Background Halaman/Header.jpg" alt="Header BG" class="block max-w-full" />
+        <img src="../assets/Images/Background Halaman/sewa.jpg" alt="Header BG" class="block max-w-full" />
         <figcaption class="flex justify-center items-center text-center text-white text-7xl min-[890px]:text-9xl font-Indieground absolute top-0 left-0 w-full h-full">Sewa</figcaption>
       </figure>
     </header>
-    <main class="bg-secondary p-standart font-Schibsted">
-      <div class="cards py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
+    <main class="bg-secondary font-Schibsted py-10 min-[840px]:py-20">
+      <div class="cards max-w-screen-xl mx-auto p-4 md:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
         <div class="card cursor-pointer" id="card-1">
-          <figure class="bg-white">
-            <img src="../assets/Images/SEWA/Kompor Portable(SEWA).JPG" alt="sewaItemIMG" />
+          <figure class="bg-white border-4">
+            <img src="../assets/Images/SEWA/SEPATU (SEWA).jpg" alt="sewaItemIMG" />
           </figure>
-          <h2 class="bg-white p-standart mt-10 text-center">Tenda Dome</h2>
+          <h2 class="bg-white p-standart mt-10 text-center">Sepatu Gunung</h2>
         </div>
         <div class="card cursor-pointer" id="card-2">
-          <figure class="bg-white">
+          <figure class="bg-white border-4">
             <img src="../assets/Images/SEWA/Matras(SEWA).JPG" alt="sewaItemIMG" />
           </figure>
           <h2 class="bg-white p-standart mt-10 text-center">Matras</h2>
         </div>
         <div class="card cursor-pointer" id="card-3">
-          <figure class="bg-white">
+          <figure class="bg-white border-4">
             <img src="../assets/Images/SEWA/Sleeping Bag(SEWA).JPG" alt="sewaItemIMG" />
           </figure>
           <h2 class="bg-white p-standart mt-10 text-center">Sleeping Bag</h2>
         </div>
         <div class="card cursor-pointer" id="card-4">
-          <figure class="bg-white">
+          <figure class="bg-white border-4">
             <img src="../assets/Images/SEWA/Carrier(SEWA).JPG" alt="sewaItemIMG" />
           </figure>
           <h2 class="bg-white p-standart mt-10 text-center">Carrier L</h2>
         </div>
         <div class="card cursor-pointer" id="card-5">
-          <figure class="bg-white">
+          <figure class="bg-white border-4">
             <img src="../assets/Images/SEWA/Kursi (SEWA).JPG" alt="sewaItemIMG" />
           </figure>
           <h2 class="bg-white p-standart mt-10 text-center">Kursi Lipat</h2>
         </div>
         <div class="card cursor-pointer" id="card-6">
-          <figure class="bg-white">
+          <figure class="bg-white border-4">
             <img src="../assets/Images/SEWA/Cooking Set (SEWA).JPG" alt="sewaItemIMG" />
           </figure>
           <h2 class="bg-white p-standart mt-10 text-center">Cooking Set</h2>
         </div>
         <div class="card cursor-pointer" id="card-7">
-          <figure class="bg-white">
+          <figure class="bg-white border-4">
             <img src="../assets/Images/SEWA/Kompor Portable(SEWA).JPG" alt="sewaItemIMG" />
           </figure>
-          <h2 class="bg-white p-standart mt-10 text-center">Kompor Gas Mini</h2>
+          <h2 class="bg-white p-standart mt-10 text-center">Gas Portable</h2>
         </div>
         <div class="card cursor-pointer" id="card-8">
-          <figure class="bg-white">
+          <figure class="bg-white border-4">
             <img src="../assets/Images/SEWA/Headlamp(SEWA).JPG" alt="sewaItemIMG" />
           </figure>
           <h2 class="bg-white p-standart mt-10 text-center">Lampu & Headlamp</h2>
         </div>
       </div>
 
-      <div id="detail-container" class="hidden py-40">
+      <div id="detail-container" class="overflow-hidden hidden px-4 py-14 md:px-20 md:py-40">
         <!-- Konten detail -->
         <div class="flex items-center flex-col gap-10 min-[840px]:flex-row min-[890px]:gap-20" id="detail-wrapper ">
           <div class="images min-[890px]:w-[40%]">
-            <figure class="border-8 border-white">
-              <img src="" alt="sewaItemIMGitem IMG" class="block max-w-full" />
+            <figure class="">
+              <img src="" alt="sewaItemIMGitem IMG" class="border-8 border-white block max-w-full" />
             </figure>
           </div>
           <div class="details w-full min-[840px]:w-[50%] text-white">
             <h2 class="text-4xl text-center mb-4 min-[890px]:mb-10"></h2>
             <p class="text-lg"></p>
-            <button id="show-cards" class="border-2 py-2 px-4 border-white mt-4">Kembali</button>
+            <p class="price font-bold">Harga - Rp.<span></span></p>
+            <button id="show-cards" class="border-4 py-2 px-4 border-white mt-4">Kembali</button>
           </div>
         </div>
       </div>
@@ -125,65 +126,75 @@
       <p class="text-center text-white">COPYRIGHT © 2023 | NENDA OUTDOOR</p>
     </footer>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/marked@3.0.3/marked.min.js"></script>
   <script>
     const cardContent = [
       {
         id: "card-1",
-        image: "../assets/Images/SEWA/Kompor Portable(SEWA).JPG",
-        title: "Tenda Dome",
-        desc: `Tenda dome merupakan tempat tinggal selama berkegiatan di alam bebas, misalnya ketika sedang camping atau naik gunung. Karena itu, kenyamanan dalam menggunakannya sangat perlu diperhatikan. Kelebihan:
-
-        * Frame nya terbuat dari bahan aluminium
-        * Bobotnya ringan dan mudah dibawa
-        * Memiliki dua pintu untuk memudahkan akses
-    masuk dan keluar tenda`,
+        image: "../assets/Images/SEWA/SEPATU (SEWA).jpg",
+        title: "Sepatu Gunung",
+        desc: `Sepatu gunung adalah jenis alas kaki khusus yang dirancang untuk naik gunung. Sepatu ini khas memiliki ukuran yang pas, sedikit jika ada bantalan, dan sol karet yang halus dan lengket dengan rand karet yang diperpanjang.`,
+        price: 25000,
       },
       {
         id: "card-2",
         image: "../assets/Images/SEWA/Matras(SEWA).JPG",
         title: "Matras",
         desc: `Matras juga harus digunakan sebagai alas tidur selama camping bersama keluarga. Matras akan membuat isi tenda terasa lebih hangat dan tubuh Anda tidak bersentuhan dengan tanah secara langsung saat tidur. Matras yang berkualitas biasanya bertekstur tebal dan elastis sehingga tubuh tidak terasa sakit usai berkemah.
-`,
+        `,
+        price: 10000,
       },
       {
         id: "card-3",
         image: "../assets/Images/SEWA/Sleeping Bag(SEWA).JPG",
         title: "Sleeping Bag",
-        desc: `sleeping bag sangat penting untuk melindungi tubuh saat camping. Itulah sebabnya Anda mesti menyiapkan sleeping bag yang nyaman agar tubuh terlindungi dari perubahan cuaca dan gangguan lainnya selama tidur. Jangan menggunakan sleeping bag yang basah karena hal tersebut meningkatkan risiko hipotermia.`,
+        desc: `Sleeping bag sangat penting untuk melindungi tubuh saat camping. Itulah sebabnya Anda mesti menyiapkan sleeping bag yang nyaman agar tubuh terlindungi dari perubahan cuaca dan gangguan lainnya selama tidur. Jangan menggunakan sleeping bag yang basah karena hal tersebut meningkatkan risiko hipotermia.`,
+        price: 10000,
       },
       {
         id: "card-4",
         image: "../assets/Images/SEWA/Carrier(SEWA).JPG",
         title: "Carrier L",
-        desc: `Carrier adalah tas ransel dengan kapasitas 35-100 liter. Jenis tas ransel ini cocok untuk perjalanan jauh dengan barang bawaan banyak dan waktu tempuh lama (minimal 2 hari).
-Dengan kapasitas yang besar, carrier bisa digunakan untuk membawa banyak barang. Misalnya tenda, kursi lipat, sleeping bag, kompor, baju saat kamu mendaki gunung. Tas carrier memiliki ukuran yang besar dan tinggi. Ada yang berbentuk langsing seperti Jack Wolfskin Denali 65 L Men Trekking Backpack. Ada pula yang memiliki bentuk agak lebar seperti Eiger Eliptic Solaris 55 L.`,
+        desc: `<p>Carrier adalah tas ransel dengan kapasitas 35-100 liter. Jenis tas ransel ini cocok untuk perjalanan jauh dengan barang bawaan banyak dan waktu tempuh lama (minimal 2 hari).<p>
+
+        <p>Dengan kapasitas yang besar, carrier bisa digunakan untuk membawa banyak barang. Misalnya tenda, kursi lipat, sleeping bag, kompor, baju saat kamu mendaki gunung. Tas carrier memiliki ukuran yang besar dan tinggi. Ada yang berbentuk langsing seperti Jack Wolfskin Denali 65 L Men Trekking Backpack. Ada pula yang memiliki bentuk agak lebar seperti Eiger Eliptic Solaris 55 L.</p>`,
+        price: 25000,
       },
       {
         id: "card-5",
         image: "../assets/Images/SEWA/Kursi (SEWA).JPG",
         title: "Kursi Lipat",
-        desc: `Kursi lipat biasanya digunakan untuk duduk di tempat-tempat yang tidak mungkin atau tidak praktis untuk meletakkan kursi permanen. Tempat duduk pada acara-acara luar ruang atau arena dalam ruang sering berupa kursi lipat, misalnya pada acara **pemakaman**, upacara
-            ins wisuda
-            **misa** atau pertandingan olahraga. Pada pertandingan **gulat** profesional, atlet memakai kursi lipat sebagai senjata sewaktu memukul lawan. Di dalam rumah, kursi lipat dipakai sebagai tempat duduk sewaktu pesta, bermain kartu, atau kursi tambahan di meja makan.`,
+        desc: `Kursi lipat biasanya digunakan untuk duduk di tempat-tempat yang tidak mungkin atau tidak praktis untuk meletakkan kursi permanen. Tempat duduk pada acara-acara luar ruang atau arena dalam ruang sering berupa kursi lipat.`,
+        price: 15000,
       },
       {
         id: "card-6",
         image: "../assets/Images/SEWA/Cooking Set (SEWA).JPG",
         title: "Cooking Set",
         desc: "Cooking set adalah alat masak camping yang digunakan untuk memasak bahan makanan. Saat ini cooking set dijual beragam dari berbagai bahan pembuatan, seperti aluminium sehingga ringan dan tidak menambah beban secara signifikan. Cooking set terdiri dari beberapa alat, seperti panci, spatula, mangkuk, dan teflon.",
+        price: 10000,
       },
       {
         id: "card-7",
         image: "../assets/Images/SEWA/Kompor Portable(SEWA).JPG",
-        title: "Kompor Gas Mini",
-        desc: `Jangan lupa kalau aktivitas camping juga membutuhkan dukungan pencahayaan buatan dari senter dan headlamp. Kedua peralatan ini wajib dibawa untuk mempermudah aktivitas camping di malam hari. Selain senter dan headlamp dengan tenaga baterai, kini tersedia pula produk serupa yang dayanya bisa diisi dengan proses charging listrik agar lebih hemat energi.`,
+        title: "Kompor Gas Portable",
+        desc: `<p>Kompor portable adalah istilah yang digunakan untuk
+        menyebut kompor berukuran mini dan mudah dipindah-
+        pindahkan. Kompor seperti ini biasanya sangat ringan
+        dan menggunakan berbagai jenis bahan bakar.<p>
+
+        <p>Biasanya kompor seperti ini sudah disertai tas koper kecil dan tempat menyimpan bahan bakar gas yang dikemas dalam tabung logam kecil.<p>
+
+        <p>Kompor portable dengan bahan bakar gas paling cocok untuk dibawa berkemah. Karena ringan dan praktis, Anda bisa
+        membawanya trekking. Tak perlu membuat api unggun lagi. Acara memasak di tengah alam jadi lebih praktis.</p>`,
+        price: 10000,
       },
       {
         id: "card-8",
         image: "../assets/Images/SEWA/Headlamp(SEWA).JPG",
-        title: "Lampu & Headlamp",
+        secondImage: "../assets/Images/SEWA/Lampu Senter (SEWA).JPG",
+        title: "Senter & Headlamp",
         desc: `Jangan lupa kalau aktivitas camping juga membutuhkan dukungan pencahayaan buatan dari senter dan headlamp. Kedua peralatan ini wajib dibawa untuk mempermudah aktivitas camping di malam hari. Selain senter dan headlamp dengan tenaga baterai, kini tersedia pula produk serupa yang dayanya bisa diisi dengan proses charging listrik agar lebih hemat energi.`,
+        price: 10000,
       },
     ];
 
@@ -227,21 +238,28 @@ Dengan kapasitas yang besar, carrier bisa digunakan untuk membawa banyak barang.
       const detailImages = detailContainer.querySelector(".images figure");
       const detailTitle = detailContainer.querySelector(".details h2");
       const detailDescription = detailContainer.querySelector(".details p");
+      const detailPrice = detailContainer.querySelector(".details p span");
 
       // Hapus konten sebelumnya jika ada
       detailImages.innerHTML = "";
 
       const figure = document.createElement("figure");
       const img = document.createElement("img");
+      img.classList.add("border-4");
       img.src = content.image;
       figure.appendChild(img);
       detailImages.appendChild(figure);
 
-      detailTitle.textContent = content.title;
-      detailDescription.textContent = content.desc;
+      if (content.secondImage) {
+        const secondImg = document.createElement("img");
+        secondImg.src = content.secondImage;
+        secondImg.classList.add("border-4");
+        figure.appendChild(secondImg);
+      }
 
-      const descriptionHTML = marked(content.desc, { sanitize: true });
-      detailDescription.innerHTML = descriptionHTML;
+      detailTitle.textContent = content.title;
+      detailDescription.innerHTML = content.desc;
+      detailPrice.textContent = content.price.toLocaleString("id-ID");
     }
   </script>
 </html>
