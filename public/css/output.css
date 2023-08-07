@@ -603,6 +603,34 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[4px\] {
+  margin-top: 4px;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[200px\] {
+  margin-top: 200px;
+}
+
 .block {
   display: block;
 }
@@ -651,10 +679,6 @@ video {
   width: 10rem;
 }
 
-.w-\[40\%\] {
-  width: 40%;
-}
-
 .w-\[5rem\] {
   width: 5rem;
 }
@@ -693,6 +717,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
 }
 
 .justify-end {
@@ -881,6 +909,10 @@ video {
   font-weight: 500;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .leading-7 {
   line-height: 1.75rem;
 }
@@ -973,6 +1005,18 @@ video {
   .sm\:p-20 {
     padding: 5rem;
   }
+
+  .sm\:p-0 {
+    padding: 0px;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1019,6 +1063,11 @@ video {
     padding-right: 5rem;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -1034,12 +1083,12 @@ video {
     width: 100%;
   }
 
-  .min-\[840px\]\:w-\[50\%\] {
-    width: 50%;
-  }
-
   .min-\[840px\]\:w-\[40\%\] {
     width: 40%;
+  }
+
+  .min-\[840px\]\:w-\[50\%\] {
+    width: 50%;
   }
 
   .min-\[840px\]\:flex-row {
