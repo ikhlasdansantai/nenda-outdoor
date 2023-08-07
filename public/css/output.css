@@ -1038,6 +1038,10 @@ video {
     width: 50%;
   }
 
+  .min-\[840px\]\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .min-\[840px\]\:flex-row {
     flex-direction: row;
   }
@@ -1048,6 +1052,10 @@ video {
 
   .min-\[840px\]\:flex-col {
     flex-direction: column;
+  }
+
+  .min-\[840px\]\:gap-20 {
+    gap: 5rem;
   }
 
   .min-\[840px\]\:py-20 {
